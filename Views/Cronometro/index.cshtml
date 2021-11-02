@@ -1,0 +1,40 @@
+@{
+    
+    ViewData["title"] = "Cronometro Online";
+}
+
+<div class="row justify-content-center text-primary mt-5">
+    <h1>@ViewData["title"]</h1>
+</div>
+
+<!-- A principio todo o codigo feito em c# é desnecessário já que a aplicação roda totamlente no cliente -->
+<div class="row justify-content-center">
+    <div>
+        <span id="cronometro" class="text-dark cronometro">00:00:00.</span>
+        <span id="milesimos" class="text-danger milesimos">000</span>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div>
+        <button id="iniciar" class="btn btn-success">Iniciar</button>
+        <button id="pause" class="btn btn-warning">Pause</button>
+        <button id="parcial" class="btn btn-secondary">Parcial</button>
+        <button id="parar" class="btn btn-danger">Parar</button> 
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div id="parciais">
+        <!-- Conteúdo criado por javascript em tempo de execução -->
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div>
+        <button id="limpaParciais" class="btn btn-dark">Limpar Parciais</button>
+    </div>
+</div>
+
+
+
