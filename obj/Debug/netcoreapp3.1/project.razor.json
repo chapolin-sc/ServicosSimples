@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\ServicosSimples.csproj",
+  "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\ServicosSimples.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,53 +14402,53 @@
   "RootNamespace": "ServicosSimples",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\Cronometro\\index.cshtml",
-      "TargetPath": "Views\\Cronometro\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos\\ServicosSimples\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\Views\\Cronometro\\index.cshtml",
+      "TargetPath": "Views\\Cronometro\\index.cshtml",
       "FileKind": "mvc"
     }
   ],

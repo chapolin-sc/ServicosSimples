@@ -1599,11 +1599,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tiago\\documents\\programacao\\projetos\\ServicosSimples\\ServicosSimples.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\ServicosSimples.csproj",
       "projectName": "ServicosSimples",
-      "projectPath": "C:\\Users\\tiago\\documents\\programacao\\projetos\\ServicosSimples\\ServicosSimples.csproj",
+      "projectPath": "C:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\ServicosSimples.csproj",
       "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tiago\\documents\\programacao\\projetos\\ServicosSimples\\obj\\",
+      "outputPath": "C:\\Users\\tiago\\Documents\\Programacao\\Projetos git\\servicossimples\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config"
