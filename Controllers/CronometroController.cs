@@ -9,12 +9,19 @@ namespace ServicosSimples.Controllers
     public class CronometroController : Controller
     {
 
-        ICronometroService _cronometro;
+        private ICronometroService _cronometro;
+
         public CronometroController(ICronometroService cronometro){
             _cronometro = cronometro;
         }
 
-        //Retorna uma lista de cronometros
+        public IActionResult index(){
+            return View();
+        }
+    }
+}
+
+  //Retorna uma lista de cronometros
         /*public async Task<IActionResult> index(){
             
             var listagem = await _cronometro.GetItemAsync();
@@ -25,9 +32,3 @@ namespace ServicosSimples.Controllers
             }
             return View(model);
         }*/
-
-        public IActionResult index(){
-            return View();
-        }
-    }
-}
