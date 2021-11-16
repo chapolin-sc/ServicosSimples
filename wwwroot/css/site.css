@@ -88,3 +88,8 @@ body {
 .parcialMilsec {
   font-size: 1rem;
 }
+
+.hora {
+  font-size: 7rem;
+  line-height: 8rem;
+}

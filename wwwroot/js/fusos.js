@@ -12,9 +12,11 @@
         cache: 'default'
     }
 
-    fetch("https://worldtimeapi.org/api/timezone/America", options)
+    fetch("https://worldtimeapi.org/api/ip", options)
     .then( response => { response.json()
-        .then( data => console.log(data))
+        .then( data => 
+           $("#horaCerta").html(data.datetime)
+        )
     })
     .catch(e => console.log("Errou!: " + e.message))
 
