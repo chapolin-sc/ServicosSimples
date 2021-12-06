@@ -7,6 +7,9 @@
  $(document).ready(function () {
 
     var datetime = new Date();
+    moment.locale('pt-br');
+
+    console.log(moment())
     
     var options = {
         method: 'GET',
@@ -23,8 +26,7 @@
     function mostraHora(dateJson){
         console.log(dateJson.unixtime)
         $("#horaCerta").html(moment(dateJson.datetime).format("H:mm:ss"))
-        $("#testeMilessimosHora").html(moment( datetime.getTime()).format( "YYYYMMDD"))
-        //milesimosParaRelogio(dateJson.unixtime);
+        $("#data").html(moment().format('dddd') + ', ' + moment(datetime.getTime()).format('LL'))
     }
 
     function milesimosParaRelogio(milesimos){
@@ -47,9 +49,8 @@
     }
 
 });
+     //milesimosParaRelogio(dateJson.unixtime);
 
     /*console.log(`${datetime.getFullYear()} - ${datetime.getMonth()} - ${datetime.getDate()}`)
     console.log(`${datetime.getHours()} - ${datetime.getMinutes()} - ${datetime.getSeconds()}`)
     console.log(datetime.getTime())*/
-
-    //milesimosParaRelogio(1637155899);

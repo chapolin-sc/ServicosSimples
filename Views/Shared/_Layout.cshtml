@@ -31,7 +31,7 @@
                             </div>
                         </li>-->
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Fusos" asp-action="Index">Fusos</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Fusos" asp-action="Index">Hora Atual</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Cronometro" asp-action="Index">Cronometro</a>
@@ -57,7 +57,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/fusos.js" asp-append-version="true"></script>
-    <script src="~/lib/moment/moment.min.js"></script> 
+    <script src="~/lib/moment/moment.min.js"></script>
+    <script src="~/lib/moment/moment-with-locales.min.js"></script> 
     @RenderSection("Scripts", required: false)
 </body>
 </html>
