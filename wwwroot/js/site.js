@@ -5,7 +5,11 @@
  * 
  *************/
 
+<<<<<<< HEAD
  $(document).ready(function () {
+=======
+$(document).ready(function () {
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 
     var crono;
     var tempoPause          = 0;
@@ -128,4 +132,8 @@
         }
     }
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77

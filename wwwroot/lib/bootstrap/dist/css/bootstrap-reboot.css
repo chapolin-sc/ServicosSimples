@@ -1,8 +1,15 @@
 /*!
+<<<<<<< HEAD
  * Bootstrap Reboot v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+=======
+ * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 *,
@@ -11,6 +18,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -26,10 +34,16 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
+=======
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+<<<<<<< HEAD
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -91,6 +105,36 @@ h5 {
 
 h6 {
   font-size: 1rem;
+=======
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 p {
@@ -99,10 +143,19 @@ p {
 }
 
 abbr[title],
+<<<<<<< HEAD
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
+=======
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
@@ -114,11 +167,14 @@ address {
 }
 
 ol,
+<<<<<<< HEAD
 ul {
   padding-left: 2rem;
 }
 
 ol,
+=======
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 ul,
 dl {
   margin-top: 0;
@@ -137,7 +193,11 @@ dt {
 }
 
 dd {
+<<<<<<< HEAD
   margin-bottom: 0.5rem;
+=======
+  margin-bottom: .5rem;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   margin-left: 0;
 }
 
@@ -151,23 +211,32 @@ strong {
 }
 
 small {
+<<<<<<< HEAD
   font-size: 0.875em;
 }
 
 mark {
   padding: 0.2em;
   background-color: #fcf8e3;
+=======
+  font-size: 80%;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 sub,
 sup {
   position: relative;
+<<<<<<< HEAD
   font-size: 0.75em;
+=======
+  font-size: 75%;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   line-height: 0;
   vertical-align: baseline;
 }
 
 sub {
+<<<<<<< HEAD
   bottom: -0.25em;
 }
 
@@ -184,16 +253,50 @@ a:hover {
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
+=======
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
 }
 
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
+  color: inherit;
+  text-decoration: none;
+}
+
+<<<<<<< HEAD
+=======
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 pre,
 code,
 kbd,
 samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em;
+<<<<<<< HEAD
   direction: ltr /* rtl:ignore */;
   unicode-bidi: bidi-override;
 }
@@ -231,31 +334,61 @@ kbd kbd {
   padding: 0;
   font-size: 1em;
   font-weight: 700;
+=======
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 figure {
   margin: 0 0 1rem;
 }
 
+<<<<<<< HEAD
 img,
 svg {
+=======
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   vertical-align: middle;
 }
 
 table {
+<<<<<<< HEAD
   caption-side: bottom;
+=======
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   border-collapse: collapse;
 }
 
 caption {
+<<<<<<< HEAD
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: #6c757d;
   text-align: left;
+=======
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 th {
   text-align: inherit;
+<<<<<<< HEAD
   text-align: -webkit-match-parent;
 }
 
@@ -268,18 +401,30 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+=======
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 label {
   display: inline-block;
+<<<<<<< HEAD
+=======
+  margin-bottom: 0.5rem;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 button {
   border-radius: 0;
 }
 
+<<<<<<< HEAD
 button:focus:not(:focus-visible) {
   outline: 0;
+=======
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 input,
@@ -294,17 +439,28 @@ textarea {
 }
 
 button,
+<<<<<<< HEAD
 select {
   text-transform: none;
 }
 
 [role=button] {
   cursor: pointer;
+=======
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 select {
   word-wrap: normal;
 }
+<<<<<<< HEAD
 select:disabled {
   opacity: 1;
 }
@@ -327,11 +483,50 @@ button:not(:disabled),
 }
 
 ::-moz-focus-inner {
+=======
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   padding: 0;
   border-style: none;
 }
 
+<<<<<<< HEAD
 textarea {
+=======
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
   resize: vertical;
 }
 
@@ -343,6 +538,7 @@ fieldset {
 }
 
 legend {
+<<<<<<< HEAD
   float: left;
   width: 100%;
   padding: 0;
@@ -396,6 +592,35 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
+=======
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 ::-webkit-file-upload-button {
@@ -407,21 +632,32 @@ output {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 iframe {
   border: 0;
 }
 
+=======
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 summary {
   display: list-item;
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 progress {
   vertical-align: baseline;
+=======
+template {
+  display: none;
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 }
 
 [hidden] {
   display: none !important;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 34c38ec00cee6695cb9b55fd7069960950edcf77
 /*# sourceMappingURL=bootstrap-reboot.css.map */
