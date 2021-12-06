@@ -6,7 +6,7 @@
 
  $(document).ready(function () {
 
-    var datetime = new Date("2021-11-18T10:21:49.451139-03:00");
+    var datetime = new Date();
     
     var options = {
         method: 'GET',
@@ -14,21 +14,16 @@
         cache: 'default'
     }
 
-    console.log(`${datetime.getFullYear()} - ${datetime.getMonth()} - ${datetime.getDate()}`)
-    console.log(`${datetime.getHours()} - ${datetime.getMinutes()} - ${datetime.getSeconds()}`)
-    console.log(datetime.getTime())
-
-    //milesimosParaRelogio(1637155899);
-
-    /*fetch("http://worldtimeapi.org/api/ip", options)
+    fetch("http://worldtimeapi.org/api/ip", options)
     .then( response => { response.json()
         .then( data => { mostraHora(data) })
     })
-    .catch(e => console.log("Errou!: " + e.message))*/
+    .catch(e => console.log("Errou!: " + e.message))
 
     function mostraHora(dateJson){
-        console.log(moment(dateJson.datetime).format("H:mm:ss"))
+        console.log(dateJson.unixtime)
         $("#horaCerta").html(moment(dateJson.datetime).format("H:mm:ss"))
+        $("#testeMilessimosHora").html(moment( datetime.getTime()).format( "YYYYMMDD"))
         //milesimosParaRelogio(dateJson.unixtime);
     }
 
@@ -46,9 +41,15 @@
         hh      = Math.floor(mm / 60)          //transforma minutos em horas
         mm      = mm % 60
         
-        var formatoCronometro = ( hh < 10 ? "0" + hh : hh ) + ":" + ( mm < 10 ? "0" + mm : mm ) + ":" + ( ss < 10 ? "0" + ss : ss ) + "."
+        //var formatoCronometro = ( hh < 10 ? "0" + hh : hh ) + ":" + ( mm < 10 ? "0" + mm : mm ) + ":" + ( ss < 10 ? "0" + ss : ss ) + "."
         //$("#testeMilessimosHora").html(formatoCronometro)
-        $("#testeMilessimosHora").html(moment("1637155899", "YYYYMMDD").fromNow());
+        //$("#testeMilessimosHora").html(moment("1637155899", "YYYYMMDD").fromNow());
     }
 
 });
+
+    /*console.log(`${datetime.getFullYear()} - ${datetime.getMonth()} - ${datetime.getDate()}`)
+    console.log(`${datetime.getHours()} - ${datetime.getMinutes()} - ${datetime.getSeconds()}`)
+    console.log(datetime.getTime())*/
+
+    //milesimosParaRelogio(1637155899);
