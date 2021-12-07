@@ -1,0 +1,60 @@
+@{
+    ViewData["title"] = "Cronômetro Online";
+}
+
+<div class="row text-center text-muted mt-5">
+    <h1>@ViewData["title"]</h1>
+</div>
+
+<!-- A principio todo o codigo feito em c# é desnecessário já que a aplicação roda totamlente no cliente -->
+
+<div class="row text-center">
+    <div class="">
+        <span id="cronometro" class="text-dark cronometro">00:00:00.</span>
+        <span id="milesimos" class="text-danger milesimos">000</span>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div>
+        <button id="iniciar" class="btn btn-success">Iniciar</button>
+        <button id="pause" class="btn btn-warning">Pause</button>
+        <button id="parcial" class="btn btn-secondary">Parcial</button>
+        <button id="parar" class="btn btn-danger">Parar</button> 
+    </div>
+</div>
+
+<div class="row text-center">
+    <div id="parciais">
+        <!-- Conteúdo criado por javascript em tempo de execução -->
+    </div>
+</div>
+
+<div class="row text-center">
+    <div>
+        <button id="limpaParciais" class="btn btn-dark">Limpar Parciais</button>
+    </div>
+</div>
+
+ <!---------- Descrições do Cronometro  --------------->
+
+<div class="row justify-content-center mt-5 py-3 bg-dark text-light ">
+    <div class="col">
+        <h5>Informações para ajudar a usar o Cronômetro Online.</h5>
+        <hr class="bg-light">
+        <p>
+            O Cronômetro Online é um marcador de tempo com precisão de milésimos. Ele permite que você marque 
+            o tempo de qualquer tarefa que necessite. Com uma interface simples é fácil manuseá-lo já na 
+            primeira vez.
+        </p>
+        <p>
+            Você pode minimizar o navegador ou trocar de aba e o cronômetro continuará funcionando em segundo plano,
+            agora se fechar o navegador ou a aba perderá todo o tempo já contabilizado.
+        </p>
+        <p>
+            São 4 botões para usar, sendo o "iniciar" para começar o cronômetro e voltar a rodar de onde parou se 
+            se estiver em pause, o "parar" para zerar o cronômetro quando estiver rodando ou em pause, o "pause" para 
+            pausar o tempo, e o "parcial" para gravar tempos enquanto o cronômetro continua rodando.
+        </p>
+    </div>
+</div>
