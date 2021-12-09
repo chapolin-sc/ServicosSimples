@@ -4,12 +4,16 @@
  * 
  *************/
 
- $(document).ready(function () {
+// to do: acesso regular a api para atualização constante da hora
 
-    var datetime = new Date();
-    moment.locale('pt-br');
+ $(document).ready(function () {s
 
-    console.log(moment())
+    var relogioFuso
+    //var datetime           = new Date()
+    var tempoInicioRelogio = new Date()
+    var fusoAPI            = new Date()
+
+    moment.locale('pt-br')
     
     var options = {
         method: 'GET',
@@ -24,33 +28,36 @@
     .catch(e => console.log("Errou!: " + e.message))
 
     function mostraHora(dateJson){
-        console.log(dateJson.unixtime)
+        atualizaInicioRelogio()
         $("#horaCerta").html(moment(dateJson.datetime).format("H:mm:ss"))
-        $("#data").html(moment().format('dddd') + ', ' + moment(datetime.getTime()).format('LL'))
+        $("#data").html(moment(dateJson.datetime).format('dddd') + ', ' + moment(dateJson.datetime).format('LL'))
+        
+        fusoAPI.setTime(Date.parse(dateJson.datetime))   
+        rodaRelogio()
     }
 
-    function milesimosParaRelogio(milesimos){
+    //Função recursiva
+    function rodaRelogio(){
 
-        var milsec  = 0;
-        var ss      = 0;
-        var mm      = 0;
-        var hh      = 0;
+        var tempoFinalRelogio = new Date()
+        var tempoPercorrido = 0;
+        var unixHoraAPI = fusoAPI.getTime()
 
-        ss      = Math.floor(milesimos / 1000) //transforma de milesimos para segundos
-        milsec  = milesimos % 1000             //nao deixa passar de 999 milesimos
-        mm      = Math.floor(ss / 60)          //transforma de segundos para minutos
-        ss      = ss % 60                      //nao deixa passar de 59 segundos
-        hh      = Math.floor(mm / 60)          //transforma minutos em horas
-        mm      = mm % 60
-        
-        //var formatoCronometro = ( hh < 10 ? "0" + hh : hh ) + ":" + ( mm < 10 ? "0" + mm : mm ) + ":" + ( ss < 10 ? "0" + ss : ss ) + "."
-        //$("#testeMilessimosHora").html(formatoCronometro)
-        //$("#testeMilessimosHora").html(moment("1637155899", "YYYYMMDD").fromNow());
+        tempoPercorrido = tempoFinalRelogio - tempoInicioRelogio
+        unixHoraAPI += tempoPercorrido
+
+        $("#horaCerta").html(moment(unixHoraAPI).format("H:mm:ss"))
+
+        /*console.log(moment(unixHoraAPIcopy).format("HH:mm:ss"))
+        console.log(tempoPercorrido)*/
+
+        relogioFuso = setTimeout(rodaRelogio, 300);
+
+    }
+
+    function atualizaInicioRelogio(){
+        var tempAtual = new Date()
+        tempoInicioRelogio = tempAtual
     }
 
 });
-     //milesimosParaRelogio(dateJson.unixtime);
-
-    /*console.log(`${datetime.getFullYear()} - ${datetime.getMonth()} - ${datetime.getDate()}`)
-    console.log(`${datetime.getHours()} - ${datetime.getMinutes()} - ${datetime.getSeconds()}`)
-    console.log(datetime.getTime())*/
