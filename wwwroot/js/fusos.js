@@ -20,21 +20,20 @@
 
     moment.locale('pt-br')
     chamadaAPI()
-    setInterval(chamadaAPI, 1000 * 61)
-
+    setInterval(chamadaAPI, 1000 * 61 * 3)
+    
     /*
     * Funções  
     */
 
     function chamadaAPI(){
 
-        if(relogioFuso != null){
-            clearTimeout(relogioFuso)
-        }
-
         fetch("http://worldtimeapi.org/api/ip", options)
         .then( response => { response.json()
-            .then( data => { mostraHora(data) })
+            .then( data => {
+                clearTimeout(relogioFuso) 
+                mostraHora(data) 
+            })
         })
         .catch(e => console.log("Errou!: " + e.message))
     }
