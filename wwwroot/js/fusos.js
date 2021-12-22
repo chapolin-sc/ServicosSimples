@@ -38,10 +38,11 @@
         .catch(e => console.log("Errou!: " + e.message))
     }
 
+    // funcção que pode er excluida?
     function mostraHora(dateJson){
 
         atualizaInicioRelogio()
-        $("#horaCerta").html(moment(dateJson.datetime).format("H:mm:ss"))
+        $("#horaCerta").html(moment(dateJson.datetime).format("HH:mm:ss"))
         $("#data").html(moment(dateJson.datetime).format('dddd') + ', ' + moment(dateJson.datetime).format('LL'))
         
         fusoAPI.setTime(Date.parse(dateJson.datetime))   
@@ -58,7 +59,7 @@
         tempoPercorrido = tempoFinalRelogio - tempoInicioRelogio
         unixHoraAPI += tempoPercorrido
 
-        $("#horaCerta").html(moment(unixHoraAPI).format("H:mm:ss"))
+        $("#horaCerta").html(moment(unixHoraAPI).format("HH:mm:ss"))
 
         relogioFuso = setTimeout(rodaRelogio, 300);
     }
